@@ -1,0 +1,2917 @@
+{
+  "id": "6e0e7f60-8597-4822-b55a-d8421bac26ac",
+  "version": "2.0",
+  "name": "SAAD",
+  "url": "https://sei.go.gov.br/",
+  "tests": [{
+    "id": "68687149-b091-4617-adab-7c2ed085569f",
+    "name": "1. SAAD",
+    "commands": [{
+      "id": "514935ce-64bc-4f49-965d-52cb77522d76",
+      "comment": "",
+      "command": "store",
+      "target": "202100011021035",
+      "targets": [],
+      "value": "PROCESSO"
+    }, {
+      "id": "5fc50913-ccbe-4033-8d09-45cb6e822489",
+      "comment": "",
+      "command": "store",
+      "target": "442533110 - THIAGO CORREA FAGUNDES",
+      "targets": [],
+      "value": "RESPONSAVEL"
+    }, {
+      "id": "c6579391-0cf7-4d96-9149-0921f4dc00a5",
+      "comment": "",
+      "command": "store",
+      "target": "pcesar - PAULO CESAR ALMEIDA TIMOTEO",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78229785-e4b7-4328-956d-e7df3c92c634",
+      "comment": "",
+      "command": "store",
+      "target": "906541107 - MAYCOM DE SOUZA TELES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ef7747b-c414-4c77-9c07-37c102c63fd7",
+      "comment": "",
+      "command": "store",
+      "target": "68897839134 - WESLEY PEREIRA BARBOSA",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81b4d1bf-fa46-4d20-90f6-ce241eed4613",
+      "comment": "",
+      "command": "store",
+      "target": "707373123 - ROGERIO SILVA DE MATOS",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5e139b5-a7e1-4142-baba-1e8088c112c4",
+      "comment": "",
+      "command": "store",
+      "target": "Almoxarifado / SMT",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3a42383-791c-4c0c-bc11-889ac23207ad",
+      "comment": "",
+      "command": "store",
+      "target": "Comando/Subcomando",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89025cdf-bd1e-4e60-9284-17e090d4e98b",
+      "comment": "",
+      "command": "store",
+      "target": "Companhia Operacional",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31d56020-4563-4171-b1d8-fff45ff927cc",
+      "comment": "",
+      "command": "store",
+      "target": "COVID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f95b61f8-8e5c-4aa5-9695-799289699d0c",
+      "comment": "",
+      "command": "store",
+      "target": "SAAD",
+      "targets": [],
+      "value": "SECAO"
+    }, {
+      "id": "b2ca0d49-ac6c-42e8-a5e0-b45d2660171d",
+      "comment": "",
+      "command": "store",
+      "target": "SICAP",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f4dc0ac-2f13-45e5-a654-fd421a2120fc",
+      "comment": "Abre o SEI",
+      "command": "open",
+      "target": "https://sei.go.gov.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d817a33c-b9fd-4377-b153-ceb2ddbd4f0c",
+      "comment": "[Entrando no Processo] - Seleciona a Caixa de Pesquisa",
+      "command": "click",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d90a0e6c-b109-4107-9794-01d2de892b92",
+      "comment": "[Entrando no Processo] - Cola o número do Processo",
+      "command": "type",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${PROCESSO}"
+    }, {
+      "id": "931969e8-339b-4b16-b022-81e31ea6715a",
+      "comment": "[Entrando no Processo] - Dá Enter na Caixa de Pesquisa",
+      "command": "sendKeys",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "97de6235-8709-4db8-a441-978acd66ee08",
+      "comment": "[Salvando Descrição do Processo] -  Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1ad7d73-9ad4-4f5c-ba21-8d4b2bffd382",
+      "comment": "[Salvando Descrição do Processo] - Clica no Ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(3) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(3) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Consultar/Alterar Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[3]/img", "xpath:idRelative"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee580bf6-c529-4e70-9e3b-9a6e23570bd3",
+      "comment": "[Salvando Descrição do Processo] - Salva o Valor",
+      "command": "storeValue",
+      "target": "id=txtDescricao",
+      "targets": [],
+      "value": "DESCRICAO"
+    }, {
+      "id": "85e361fb-05c8-4390-bb28-85befde4d60f",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e6e208d-2f43-4326-9ae6-aaf2d7001bbc",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "60088669-fb60-4631-ae2b-6ba1c99b76ab",
+      "comment": "[Acompanhamento Especial] - Recarrega a página",
+      "command": "executeScript",
+      "target": "window.location.reload()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8496905c-9c81-4997-91f2-f8f287e65971",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca4b878c-cff4-4360-b20b-c107f4358338",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb98ae7f-be86-4439-9a80-b0139a2d79b5",
+      "comment": "[Acompanhamento Especial] - Clica no Acompanhamento",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(4) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(4) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Acompanhamento Especial']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[4]/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01192da2-80ff-42ee-b3a6-39269d05ee08",
+      "comment": "[Acompanhamento Especial] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaObservacao",
+      "targets": [],
+      "value": "${DESCRICAO}"
+    }, {
+      "id": "5cf1a489-1b19-44e6-9379-640a06080614",
+      "comment": "[Acompanhamento Especial] - Clica no menu",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eee04b38-db2c-4a73-9761-63036aafc45b",
+      "comment": "[Acompanhamento Especial] - Clica na SAAD",
+      "command": "select",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [],
+      "value": "label=${SECAO}"
+    }, {
+      "id": "78fd5d9f-45e2-4529-896d-01fdb867e3a6",
+      "comment": "[Acompanhamento Especial] - Clica no MENU",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "526fae6b-efe5-4084-afa1-2c9315f8838d",
+      "comment": "[Acompanhamento Especial] - Salva",
+      "command": "click",
+      "target": "css=.infraButton:nth-child(1) > .infraTeclaAtalho",
+      "targets": [
+        ["css=.infraButton:nth-child(1) > .infraTeclaAtalho", "css:finder"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9dca325-2d53-4762-a104-da969e8ccdb6",
+      "comment": "[Atribuir Processo] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(8) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(8) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Atribuir Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[8]/img", "xpath:idRelative"],
+        ["xpath=//a[8]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eea5f61-3ab6-4ca0-9f05-f61dcba274e4",
+      "comment": "[Atribuir Processo] - Clica no menu",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7b68b28-3d79-41b7-85a1-163551c315ad",
+      "comment": "[Atribuir Processo] - Seleciona o Responsável",
+      "command": "select",
+      "target": "id=selAtribuicao",
+      "targets": [],
+      "value": "label=${RESPONSAVEL}"
+    }, {
+      "id": "dbdf4f25-79fb-4c01-828c-048ec6046925",
+      "comment": "[Atribuir Processo] - Clica no MENU",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "704e4e48-30e7-456e-9e29-addc4d211049",
+      "comment": "[Atribuir Processo] - Salva",
+      "command": "click",
+      "target": "id=sbmSalvar",
+      "targets": [
+        ["id=sbmSalvar", "id"],
+        ["name=sbmSalvar", "name"],
+        ["css=#sbmSalvar", "css:finder"],
+        ["xpath=//button[@id='sbmSalvar']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb0ae2c2-257b-478e-92ce-c25b1b2373dc",
+      "comment": "[Anotações] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(14) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(14) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Anotações']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[14]/img", "xpath:idRelative"],
+        ["xpath=//a[14]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0b568b0-a4a4-4762-a568-e8c86f8c375e",
+      "comment": "[Anotações] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaDescricao",
+      "targets": [
+        ["id=txaDescricao", "id"],
+        ["name=txaDescricao", "name"],
+        ["css=#txaDescricao", "css:finder"],
+        ["xpath=//textarea[@id='txaDescricao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Em andamento]"
+    }, {
+      "id": "0fa38f62-c00c-487d-8c80-1bdea25fa241",
+      "comment": "[Anotações] - Clica no Prioridade",
+      "command": "check",
+      "target": "id=chkSinPrioridade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b32e08c0-5c8a-4847-8992-303b09958e82",
+      "comment": "[Anotações] - Clica no Salvar",
+      "command": "click",
+      "target": "name=sbmRegistrarAnotacao",
+      "targets": [
+        ["name=sbmRegistrarAnotacao", "name"],
+        ["css=.infraButton", "css:finder"],
+        ["xpath=//button[@name='sbmRegistrarAnotacao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cf47b5a-7da9-4c6c-bf2e-fe79b2c4d863",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(18) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(18) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Gerenciar Marcador']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[18]/img", "xpath:idRelative"],
+        ["xpath=//a[18]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19697ff4-172c-4f5b-aefc-3ee9fddf4d4e",
+      "comment": "[Marcador] - Clica no Menu",
+      "command": "click",
+      "target": "css=.dd-selected",
+      "targets": [
+        ["css=.dd-selected", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/div/a", "xpath:idRelative"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb4de767-49b4-45f3-92e5-c90ea0cd8309",
+      "comment": "[Marcador] - Clica na SAAD",
+      "command": "click",
+      "target": "linkText=${SECAO}",
+      "targets": [
+        ["linkText=SAAD", "linkText"],
+        ["css=li:nth-child(10) > .dd-option", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SAAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2795454-e7bf-4b00-adae-f76071ea56e6",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d32853f2-f38a-4abe-94b0-13463e68f876",
+      "comment": "[Marcador] - Escreve Notion",
+      "command": "type",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Notion] - "
+    }]
+  }, {
+    "id": "79b6b782-b792-41d3-a51c-fc29db5e8846",
+    "name": "4. Almoxarifado",
+    "commands": [{
+      "id": "65dc31c0-e21e-482a-9990-f1d1da945eed",
+      "comment": "",
+      "command": "store",
+      "target": "202100011021013",
+      "targets": [],
+      "value": "PROCESSO"
+    }, {
+      "id": "e50364c8-ec8f-42ce-a388-31ce2171ae6a",
+      "comment": "",
+      "command": "store",
+      "target": "442533110 - THIAGO CORREA FAGUNDES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa7b29bd-a1af-415a-96c9-b1752b3f335d",
+      "comment": "",
+      "command": "store",
+      "target": "pcesar - PAULO CESAR ALMEIDA TIMOTEO",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee9a1a4a-d276-48d6-9ca6-063473be045a",
+      "comment": "",
+      "command": "store",
+      "target": "906541107 - MAYCOM DE SOUZA TELES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26680d4b-da13-4dce-a27b-5e12d55ea02e",
+      "comment": "",
+      "command": "store",
+      "target": "68897839134 - WESLEY PEREIRA BARBOSA",
+      "targets": [],
+      "value": "RESPONSAVEL"
+    }, {
+      "id": "f44190cf-6008-4ee7-874e-4ed8e4ab91cf",
+      "comment": "",
+      "command": "store",
+      "target": "707373123 - ROGERIO SILVA DE MATOS",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9262e8a2-cbb4-4de0-a5ec-fa5383695ed2",
+      "comment": "",
+      "command": "store",
+      "target": "Almoxarifado / SMT",
+      "targets": [],
+      "value": "SECAO"
+    }, {
+      "id": "204c3435-ee6a-44a1-9b48-914ce884a5e1",
+      "comment": "",
+      "command": "store",
+      "target": "Comando/Subcomando",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0fca2bf-bf1d-4127-94bf-1d8d516a88e5",
+      "comment": "",
+      "command": "store",
+      "target": "Companhia Operacional",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b123583c-bb79-468a-95bf-c16b8c41a90a",
+      "comment": "",
+      "command": "store",
+      "target": "COVID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34e851e4-f326-4074-a9d3-0f0cfc50308c",
+      "comment": "",
+      "command": "store",
+      "target": "SAAD",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a190035-c8f7-4af1-8629-d6b57447c4ba",
+      "comment": "",
+      "command": "store",
+      "target": "SICAP",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab1ac126-a9eb-4243-a5d0-cdb76fdc08e9",
+      "comment": "Abre o SEI",
+      "command": "open",
+      "target": "https://sei.go.gov.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37277ac6-7fe3-447f-916e-c02f9c7bde9a",
+      "comment": "[Entrando no Processo] - Seleciona a Caixa de Pesquisa",
+      "command": "click",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ed7c2d2-9485-4c7d-a321-fb668f3151af",
+      "comment": "[Entrando no Processo] - Cola o número do Processo",
+      "command": "type",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${PROCESSO}"
+    }, {
+      "id": "23ded2b7-4f37-406a-8d57-33cb555b1683",
+      "comment": "[Entrando no Processo] - Dá Enter na Caixa de Pesquisa",
+      "command": "sendKeys",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9c135138-6698-4a1e-bd44-a87aeb37c3a8",
+      "comment": "[Salvando Descrição do Processo] -  Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "f69f61f0-ca5b-4353-9bc9-941563849d0c",
+      "comment": "[Salvando Descrição do Processo] - Clica no Ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(3) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(3) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Consultar/Alterar Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[3]/img", "xpath:idRelative"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e1f4b7-abf0-480f-affa-f7945e94f258",
+      "comment": "[Salvando Descrição do Processo] - Salva o Valor",
+      "command": "storeValue",
+      "target": "id=txtDescricao",
+      "targets": [],
+      "value": "DESCRICAO"
+    }, {
+      "id": "e229ef6c-713d-4c69-ae3b-46e5b40f5018",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "356823a7-c7e6-4524-b35b-434bbe3f7ca3",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8aa2672-f084-4c84-b311-1be56aec798a",
+      "comment": "[Acompanhamento Especial] - Recarrega a página",
+      "command": "executeScript",
+      "target": "window.location.reload()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47ff3f10-994e-43a6-be0b-6a0e838d7f43",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fa45ce6-8ee0-4133-a2aa-1de59264bd0f",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "630d0651-bb86-4039-b834-e97ec9cd007b",
+      "comment": "[Acompanhamento Especial] - Clica no Acompanhamento",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(4) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(4) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Acompanhamento Especial']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[4]/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee95e410-9280-4822-9e1c-31bd21de0c97",
+      "comment": "[Acompanhamento Especial] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaObservacao",
+      "targets": [],
+      "value": "${DESCRICAO}"
+    }, {
+      "id": "992f061a-1ada-447a-bc8b-538b3f370fd8",
+      "comment": "[Acompanhamento Especial] - Clica no menu",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc20e076-89ca-4cb9-9f0c-49396e01b272",
+      "comment": "[Acompanhamento Especial] - Clica na SAAD",
+      "command": "select",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [],
+      "value": "label=${SECAO}"
+    }, {
+      "id": "c373cf1d-3990-4c7a-947c-3c7646c380fa",
+      "comment": "[Acompanhamento Especial] - Clica no MENU",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b930d16-ab9c-40d2-870b-36a1d1390910",
+      "comment": "[Acompanhamento Especial] - Salva",
+      "command": "click",
+      "target": "css=.infraButton:nth-child(1) > .infraTeclaAtalho",
+      "targets": [
+        ["css=.infraButton:nth-child(1) > .infraTeclaAtalho", "css:finder"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "765c5a0e-fdd7-418c-b978-a46e234344b9",
+      "comment": "[Atribuir Processo] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(8) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(8) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Atribuir Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[8]/img", "xpath:idRelative"],
+        ["xpath=//a[8]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8b32052-6d0a-45fe-8bfa-963a273a595b",
+      "comment": "[Atribuir Processo] - Clica no menu",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "106bdcc6-8ad7-43f9-8093-22b99bdc8951",
+      "comment": "[Atribuir Processo] - Seleciona o Responsável",
+      "command": "select",
+      "target": "id=selAtribuicao",
+      "targets": [],
+      "value": "label=${RESPONSAVEL}"
+    }, {
+      "id": "548da620-060d-4bdd-896a-2b6b066c8e37",
+      "comment": "[Atribuir Processo] - Clica no MENU",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd5130dc-a7ce-4b45-90a4-6153191e9068",
+      "comment": "[Atribuir Processo] - Salva",
+      "command": "click",
+      "target": "id=sbmSalvar",
+      "targets": [
+        ["id=sbmSalvar", "id"],
+        ["name=sbmSalvar", "name"],
+        ["css=#sbmSalvar", "css:finder"],
+        ["xpath=//button[@id='sbmSalvar']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27bfa2a1-48a1-45f1-a3bc-c8b16c332ace",
+      "comment": "[Anotações] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(14) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(14) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Anotações']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[14]/img", "xpath:idRelative"],
+        ["xpath=//a[14]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21257118-f4eb-4b31-8317-ea3f3e42fa31",
+      "comment": "[Anotações] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaDescricao",
+      "targets": [
+        ["id=txaDescricao", "id"],
+        ["name=txaDescricao", "name"],
+        ["css=#txaDescricao", "css:finder"],
+        ["xpath=//textarea[@id='txaDescricao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Em andamento]"
+    }, {
+      "id": "5dfb8a10-bdfe-4346-af31-2b37282e67f9",
+      "comment": "[Anotações] - Clica no Prioridade",
+      "command": "check",
+      "target": "id=chkSinPrioridade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0405e4e-e5d9-403c-847e-dbc685db42bf",
+      "comment": "[Anotações] - Clica no Salvar",
+      "command": "click",
+      "target": "name=sbmRegistrarAnotacao",
+      "targets": [
+        ["name=sbmRegistrarAnotacao", "name"],
+        ["css=.infraButton", "css:finder"],
+        ["xpath=//button[@name='sbmRegistrarAnotacao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ce9dc01-8ce0-408e-9a7d-d6c799ca712b",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(18) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(18) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Gerenciar Marcador']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[18]/img", "xpath:idRelative"],
+        ["xpath=//a[18]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0a2230a-5967-40b5-b317-f0740875dc54",
+      "comment": "[Marcador] - Clica no Menu",
+      "command": "click",
+      "target": "css=.dd-selected",
+      "targets": [
+        ["css=.dd-selected", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/div/a", "xpath:idRelative"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "239f7c7d-c235-4a43-9bb8-eee1738ab58a",
+      "comment": "[Marcador] - Clica na SAAD",
+      "command": "click",
+      "target": "linkText=${SECAO}",
+      "targets": [
+        ["linkText=SAAD", "linkText"],
+        ["css=li:nth-child(10) > .dd-option", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SAAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "109fadb4-81ed-4faf-a862-e2f8d9bd6ce9",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44361f64-64ad-4693-891b-ba0599339891",
+      "comment": "[Marcador] - Escreve Notion",
+      "command": "type",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Notion] - "
+    }]
+  }, {
+    "id": "ee93fd61-8d0e-45ce-96f2-001027cb23b8",
+    "name": "6. SICAP",
+    "commands": [{
+      "id": "eff386e0-0fc6-46d6-9276-0279c1705454",
+      "comment": "",
+      "command": "store",
+      "target": "202100011020397",
+      "targets": [],
+      "value": "PROCESSO"
+    }, {
+      "id": "4390689c-8c6a-44d0-bba2-4a77becd6fd5",
+      "comment": "",
+      "command": "store",
+      "target": "442533110 - THIAGO CORREA FAGUNDES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8712be7d-f1f3-4b51-bab7-5cdaacc553bc",
+      "comment": "",
+      "command": "store",
+      "target": "pcesar - PAULO CESAR ALMEIDA TIMOTEO",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "933510e9-bfa9-412e-9822-1124f7a47135",
+      "comment": "",
+      "command": "store",
+      "target": "jeffersonferreira - JEFFERSON FERREIRA SOUZA",
+      "targets": [],
+      "value": "RESPONSAVEL"
+    }, {
+      "id": "c5deaf87-1390-48a7-8471-9f35185fa210",
+      "comment": "",
+      "command": "store",
+      "target": "906541107 - MAYCOM DE SOUZA TELES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "372e29f2-9ac8-4032-a97d-0d561f84e438",
+      "comment": "",
+      "command": "store",
+      "target": "68897839134 - WESLEY PEREIRA BARBOSA",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "340b355c-bfa0-4851-9e39-dc32decf7246",
+      "comment": "",
+      "command": "store",
+      "target": "707373123 - ROGERIO SILVA DE MATOS",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bacc172-bc6b-4abf-ba89-f866b91a958c",
+      "comment": "",
+      "command": "store",
+      "target": "Almoxarifado / SMT",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04277924-b3aa-435a-a531-95746ca4721b",
+      "comment": "",
+      "command": "store",
+      "target": "Comando/Subcomando",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72aa6d54-9649-4abc-bb30-b752e16560a1",
+      "comment": "",
+      "command": "store",
+      "target": "Companhia Operacional",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13b6beef-6487-48f9-a49e-88f835504e78",
+      "comment": "",
+      "command": "store",
+      "target": "SICAP",
+      "targets": [],
+      "value": "SECAO"
+    }, {
+      "id": "85321641-2c96-4e8e-9dea-b90af3c393c5",
+      "comment": "",
+      "command": "store",
+      "target": "COVID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3ae877b-bc9c-4277-8055-170c4d59a640",
+      "comment": "",
+      "command": "store",
+      "target": "SAAD",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b770b186-821f-49a7-a953-f754c737b10f",
+      "comment": "",
+      "command": "store",
+      "target": "SICAP",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71553155-0450-47b2-bc52-5756e56200b2",
+      "comment": "Abre o SEI",
+      "command": "open",
+      "target": "https://sei.go.gov.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8f4b761-256f-43e6-aba2-2f7594ee6049",
+      "comment": "[Entrando no Processo] - Seleciona a Caixa de Pesquisa",
+      "command": "click",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3d95f3d-c09e-4fb8-ae4c-118d12cc673f",
+      "comment": "[Entrando no Processo] - Cola o número do Processo",
+      "command": "type",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${PROCESSO}"
+    }, {
+      "id": "6dda9a7f-0902-4b80-95f1-7c4e5f391ba7",
+      "comment": "[Entrando no Processo] - Dá Enter na Caixa de Pesquisa",
+      "command": "sendKeys",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "74d38f64-bcb9-42e2-aff1-1804fd318de1",
+      "comment": "[Salvando Descrição do Processo] -  Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "b57e15c3-d7db-4276-ae17-03138be52f14",
+      "comment": "[Salvando Descrição do Processo] - Clica no Ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(3) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(3) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Consultar/Alterar Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[3]/img", "xpath:idRelative"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33baf984-2de1-4336-b6c3-5539dd644507",
+      "comment": "[Salvando Descrição do Processo] - Salva o Valor",
+      "command": "storeValue",
+      "target": "id=txtDescricao",
+      "targets": [],
+      "value": "DESCRICAO"
+    }, {
+      "id": "585644d4-5bda-4352-a642-b09d3cf61c47",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "06c9a5b0-1c58-4781-ae78-eb79cdca1cc5",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb2c4777-48f3-4557-ab6f-82a021b9874c",
+      "comment": "[Acompanhamento Especial] - Recarrega a página",
+      "command": "executeScript",
+      "target": "window.location.reload()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "783a715d-2326-4678-8c48-f6ef541074fc",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "3542af6b-8d92-4d40-8ae4-54f69bd456cf",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "638fa15a-d480-4369-96f3-b324d9ac3eae",
+      "comment": "[Acompanhamento Especial] - Clica no Acompanhamento",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(4) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(4) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Acompanhamento Especial']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[4]/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6e2a0f0-f58d-4435-a536-1127aad80401",
+      "comment": "[Acompanhamento Especial] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaObservacao",
+      "targets": [],
+      "value": "${DESCRICAO}"
+    }, {
+      "id": "f68b6dea-e927-4d05-9ecd-53e6f6bee827",
+      "comment": "[Acompanhamento Especial] - Clica no menu",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "253e1e00-a80e-40ca-9d93-26d66bcd53a3",
+      "comment": "[Acompanhamento Especial] - Clica na SAAD",
+      "command": "select",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [],
+      "value": "label=${SECAO}"
+    }, {
+      "id": "73a59946-c960-4259-b8e4-060944c80b61",
+      "comment": "[Acompanhamento Especial] - Clica no MENU",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "154b2798-b8cb-425e-b5eb-c6c8447b3eb7",
+      "comment": "[Acompanhamento Especial] - Salva",
+      "command": "click",
+      "target": "css=.infraButton:nth-child(1) > .infraTeclaAtalho",
+      "targets": [
+        ["css=.infraButton:nth-child(1) > .infraTeclaAtalho", "css:finder"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "228bf1fc-c4fd-4366-ba75-5eb3fab266bf",
+      "comment": "[Atribuir Processo] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(8) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(8) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Atribuir Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[8]/img", "xpath:idRelative"],
+        ["xpath=//a[8]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62c4571d-6877-404b-ba52-13011bea3574",
+      "comment": "[Atribuir Processo] - Clica no menu",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cf3b72c-6211-4058-95c4-db93ee0ad5f6",
+      "comment": "[Atribuir Processo] - Seleciona o Responsável",
+      "command": "select",
+      "target": "id=selAtribuicao",
+      "targets": [],
+      "value": "label=${RESPONSAVEL}"
+    }, {
+      "id": "08d1d750-e423-4748-94ad-faa2d9d14877",
+      "comment": "[Atribuir Processo] - Clica no MENU",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29932c33-e606-4134-9174-1118e859de94",
+      "comment": "[Atribuir Processo] - Salva",
+      "command": "click",
+      "target": "id=sbmSalvar",
+      "targets": [
+        ["id=sbmSalvar", "id"],
+        ["name=sbmSalvar", "name"],
+        ["css=#sbmSalvar", "css:finder"],
+        ["xpath=//button[@id='sbmSalvar']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40b647fc-81d4-4c6a-a393-f9ce60708f96",
+      "comment": "[Anotações] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(14) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(14) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Anotações']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[14]/img", "xpath:idRelative"],
+        ["xpath=//a[14]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba2f2061-3c0b-4060-be58-00fde1a92b1c",
+      "comment": "[Anotações] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaDescricao",
+      "targets": [
+        ["id=txaDescricao", "id"],
+        ["name=txaDescricao", "name"],
+        ["css=#txaDescricao", "css:finder"],
+        ["xpath=//textarea[@id='txaDescricao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Em andamento]"
+    }, {
+      "id": "ce9c4ead-4efa-4525-810d-d4b36b080469",
+      "comment": "[Anotações] - Clica no Prioridade",
+      "command": "check",
+      "target": "id=chkSinPrioridade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bc99969-f331-4cc7-8ede-535c1dd68837",
+      "comment": "[Anotações] - Clica no Salvar",
+      "command": "click",
+      "target": "name=sbmRegistrarAnotacao",
+      "targets": [
+        ["name=sbmRegistrarAnotacao", "name"],
+        ["css=.infraButton", "css:finder"],
+        ["xpath=//button[@name='sbmRegistrarAnotacao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd8b2cdb-ede8-4f82-aa77-016bdc7352eb",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(18) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(18) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Gerenciar Marcador']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[18]/img", "xpath:idRelative"],
+        ["xpath=//a[18]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7f9bb40-8c60-4035-9462-1bc55c5440f7",
+      "comment": "[Marcador] - Clica no Menu",
+      "command": "click",
+      "target": "css=.dd-selected",
+      "targets": [
+        ["css=.dd-selected", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/div/a", "xpath:idRelative"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea732ef5-3067-42b6-add3-4f05b8cfeb99",
+      "comment": "[Marcador] - Clica na SAAD",
+      "command": "click",
+      "target": "linkText=${SECAO}",
+      "targets": [
+        ["linkText=SAAD", "linkText"],
+        ["css=li:nth-child(10) > .dd-option", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SAAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab85f66a-9018-437f-acca-b110c2a8cdf5",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57a7d779-2a8e-48a3-880b-f5d21a439990",
+      "comment": "[Marcador] - Escreve Notion",
+      "command": "type",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Notion] - "
+    }]
+  }, {
+    "id": "dcde097a-6711-4580-856d-6f9b19b37fd4",
+    "name": "3. Comando",
+    "commands": [{
+      "id": "d629f4a8-a655-45a5-93b1-12eb5c596b55",
+      "comment": "",
+      "command": "store",
+      "target": "202100011018810",
+      "targets": [],
+      "value": "PROCESSO"
+    }, {
+      "id": "d0fb5720-9388-4027-b4ee-72b6d29d4d1e",
+      "comment": "",
+      "command": "store",
+      "target": "442533110 - THIAGO CORREA FAGUNDES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bd9267a-f0ca-4118-ad02-7446610abb41",
+      "comment": "",
+      "command": "store",
+      "target": "pcesar - PAULO CESAR ALMEIDA TIMOTEO",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98a30f55-7c6b-444c-b908-5b8f208c1d9a",
+      "comment": "",
+      "command": "store",
+      "target": "906541107 - MAYCOM DE SOUZA TELES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bec278ec-29f8-4218-9a33-18aea08aeeb6",
+      "comment": "",
+      "command": "store",
+      "target": "68897839134 - WESLEY PEREIRA BARBOSA",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7db88a30-7c24-4f7b-a826-83a455f0f31f",
+      "comment": "",
+      "command": "store",
+      "target": "707373123 - ROGERIO SILVA DE MATOS",
+      "targets": [],
+      "value": "RESPONSAVEL"
+    }, {
+      "id": "64a23c15-2ed9-42bd-ae93-c33bc34871e5",
+      "comment": "",
+      "command": "store",
+      "target": "Almoxarifado / SMT",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "275b9e88-c92b-4428-9e5a-31e3c53ae225",
+      "comment": "",
+      "command": "store",
+      "target": "Comando/Subcomando",
+      "targets": [],
+      "value": "SECAO"
+    }, {
+      "id": "ab823b46-b965-4946-8b87-219ba1f78880",
+      "comment": "",
+      "command": "store",
+      "target": "Companhia Operacional",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c95c8d84-0f39-4096-87c0-c03a6206bc26",
+      "comment": "",
+      "command": "store",
+      "target": "COVID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07de25ec-4ffa-4312-96fb-289d5a53f228",
+      "comment": "",
+      "command": "store",
+      "target": "SAAD",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a1968aa-802a-4a93-b47d-a3db133b7c5d",
+      "comment": "",
+      "command": "store",
+      "target": "SICAP",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1d1d4a4-f5b7-46ae-a2c1-2ed3622f1566",
+      "comment": "Abre o SEI",
+      "command": "open",
+      "target": "https://sei.go.gov.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a1257ca-305d-4343-8ef6-f20064eea94d",
+      "comment": "[Entrando no Processo] - Seleciona a Caixa de Pesquisa",
+      "command": "click",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "661f3d40-3307-488e-95c2-e41df1da60e0",
+      "comment": "[Entrando no Processo] - Cola o número do Processo",
+      "command": "type",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${PROCESSO}"
+    }, {
+      "id": "4c861fe4-bd75-4a94-97c1-fc1f2abf3255",
+      "comment": "[Entrando no Processo] - Dá Enter na Caixa de Pesquisa",
+      "command": "sendKeys",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "812bb9b1-f8ce-4a66-8df0-1d451d1c89ca",
+      "comment": "[Salvando Descrição do Processo] -  Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "edfe7cb6-ba86-4814-b718-8243aef11ef0",
+      "comment": "[Salvando Descrição do Processo] - Clica no Ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(3) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(3) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Consultar/Alterar Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[3]/img", "xpath:idRelative"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e7ee7ff-07c2-4f8f-93dc-4dae149eb9dc",
+      "comment": "[Salvando Descrição do Processo] - Salva o Valor",
+      "command": "storeValue",
+      "target": "id=txtDescricao",
+      "targets": [],
+      "value": "DESCRICAO"
+    }, {
+      "id": "023540bc-07e4-4982-81cb-7136570d3059",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b0df669-fedb-453d-96a8-2f2bd3dbec65",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5a25d3d-bbf3-4db7-b8c2-878491e079b3",
+      "comment": "[Acompanhamento Especial] - Recarrega a página",
+      "command": "executeScript",
+      "target": "window.location.reload()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab08acf4-4282-4aa2-aa63-e56d5a66bbfc",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "3da86295-d7e0-4d41-b720-0889825b58da",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbabc875-8886-43c2-8032-f32e0003f0ac",
+      "comment": "[Acompanhamento Especial] - Clica no Acompanhamento",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(4) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(4) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Acompanhamento Especial']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[4]/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "780f2c03-c515-4682-b1c7-d672e65f739a",
+      "comment": "[Acompanhamento Especial] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaObservacao",
+      "targets": [],
+      "value": "${DESCRICAO}"
+    }, {
+      "id": "6442ad72-3af3-4f78-a430-b76201274555",
+      "comment": "[Acompanhamento Especial] - Clica no menu",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f95a979c-8439-4895-a1b5-b5e6aa7a4a26",
+      "comment": "[Acompanhamento Especial] - Clica na SAAD",
+      "command": "select",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [],
+      "value": "label=${SECAO}"
+    }, {
+      "id": "43559ee1-aa96-4118-a599-a7b81aab1bc1",
+      "comment": "[Acompanhamento Especial] - Clica no MENU",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1317fcb-7a10-4a91-8d92-9487134aaf7f",
+      "comment": "[Acompanhamento Especial] - Salva",
+      "command": "click",
+      "target": "css=.infraButton:nth-child(1) > .infraTeclaAtalho",
+      "targets": [
+        ["css=.infraButton:nth-child(1) > .infraTeclaAtalho", "css:finder"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1a464c5-0f3f-41a7-8089-7a62b9a398dd",
+      "comment": "[Atribuir Processo] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(8) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(8) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Atribuir Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[8]/img", "xpath:idRelative"],
+        ["xpath=//a[8]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4268319-ecc3-4720-9e4d-5930f25074db",
+      "comment": "[Atribuir Processo] - Clica no menu",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed581d12-9a77-46b0-a1c2-7fd0c60989df",
+      "comment": "[Atribuir Processo] - Seleciona o Responsável",
+      "command": "select",
+      "target": "id=selAtribuicao",
+      "targets": [],
+      "value": "label=${RESPONSAVEL}"
+    }, {
+      "id": "c1a4f745-0cc2-4686-981e-4a855b46af5c",
+      "comment": "[Atribuir Processo] - Clica no MENU",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb03ea94-07e4-4149-9f26-99b7eb09e64b",
+      "comment": "[Atribuir Processo] - Salva",
+      "command": "click",
+      "target": "id=sbmSalvar",
+      "targets": [
+        ["id=sbmSalvar", "id"],
+        ["name=sbmSalvar", "name"],
+        ["css=#sbmSalvar", "css:finder"],
+        ["xpath=//button[@id='sbmSalvar']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57ad0e8f-5b12-4114-aa96-70c1078181c6",
+      "comment": "[Anotações] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(14) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(14) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Anotações']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[14]/img", "xpath:idRelative"],
+        ["xpath=//a[14]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b7fcc7b-8417-4e93-b1ce-524121cb9ad9",
+      "comment": "[Anotações] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaDescricao",
+      "targets": [
+        ["id=txaDescricao", "id"],
+        ["name=txaDescricao", "name"],
+        ["css=#txaDescricao", "css:finder"],
+        ["xpath=//textarea[@id='txaDescricao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Em andamento]"
+    }, {
+      "id": "e72a5291-246f-4acc-9975-5e9e746b74d0",
+      "comment": "[Anotações] - Clica no Prioridade",
+      "command": "check",
+      "target": "id=chkSinPrioridade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f793514-4d75-48c6-a423-9d25b163e3a6",
+      "comment": "[Anotações] - Clica no Salvar",
+      "command": "click",
+      "target": "name=sbmRegistrarAnotacao",
+      "targets": [
+        ["name=sbmRegistrarAnotacao", "name"],
+        ["css=.infraButton", "css:finder"],
+        ["xpath=//button[@name='sbmRegistrarAnotacao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04cdb120-9121-4713-9328-1f29d0089827",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(18) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(18) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Gerenciar Marcador']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[18]/img", "xpath:idRelative"],
+        ["xpath=//a[18]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06f0977c-2756-4e88-badd-07b96f1c70a9",
+      "comment": "[Marcador] - Clica no Menu",
+      "command": "click",
+      "target": "css=.dd-selected",
+      "targets": [
+        ["css=.dd-selected", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/div/a", "xpath:idRelative"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eecd32fc-cfb7-4f6f-a7aa-47be6157c124",
+      "comment": "[Marcador] - Clica na SAAD",
+      "command": "click",
+      "target": "linkText=${SECAO}",
+      "targets": [
+        ["linkText=SAAD", "linkText"],
+        ["css=li:nth-child(10) > .dd-option", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SAAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c06fa029-f41d-42eb-9f7f-3908e2eba9c6",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f67633c-10e1-4cb8-875d-b340c7a3823f",
+      "comment": "[Marcador] - Escreve Notion",
+      "command": "type",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Notion] - "
+    }]
+  }, {
+    "id": "1fe67d76-a0fe-4e71-94ed-86a6102c30cc",
+    "name": "5. Covid",
+    "commands": [{
+      "id": "27f5ac69-8bc0-475f-a3ad-7606154d280a",
+      "comment": "",
+      "command": "store",
+      "target": "202100011019255",
+      "targets": [],
+      "value": "PROCESSO"
+    }, {
+      "id": "06bae802-21d2-4222-a5b2-d6dd64a9bc74",
+      "comment": "",
+      "command": "store",
+      "target": "442533110 - THIAGO CORREA FAGUNDES",
+      "targets": [],
+      "value": "RESPONSAVEL"
+    }, {
+      "id": "61a106c6-7916-4349-a359-abd0176abf9f",
+      "comment": "",
+      "command": "store",
+      "target": "pcesar - PAULO CESAR ALMEIDA TIMOTEO",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b0ec350-8fec-41f0-a4d1-39132b840dd3",
+      "comment": "",
+      "command": "store",
+      "target": "906541107 - MAYCOM DE SOUZA TELES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f123b73-c277-473c-bbee-7880b41eede2",
+      "comment": "",
+      "command": "store",
+      "target": "68897839134 - WESLEY PEREIRA BARBOSA",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be9f71a0-e92b-49b9-af26-4500626230e6",
+      "comment": "",
+      "command": "store",
+      "target": "707373123 - ROGERIO SILVA DE MATOS",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f89ddb6a-2057-49f0-ac38-786c684056fd",
+      "comment": "",
+      "command": "store",
+      "target": "Almoxarifado / SMT",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "524e3bd3-2a3b-4579-817b-ba8456d76a07",
+      "comment": "",
+      "command": "store",
+      "target": "Comando/Subcomando",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0aab4df9-674d-4fd1-abb7-ec508b9170e7",
+      "comment": "",
+      "command": "store",
+      "target": "Companhia Operacional",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b7ab2d2-c87e-4e60-ad72-ca640a36f775",
+      "comment": "",
+      "command": "store",
+      "target": "COVID",
+      "targets": [],
+      "value": "SECAO"
+    }, {
+      "id": "fe11a5f1-227a-4cb2-a1b6-f345e24237b2",
+      "comment": "",
+      "command": "store",
+      "target": "SAAD",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8de747b-2517-4261-91d2-53e8a75617f3",
+      "comment": "",
+      "command": "store",
+      "target": "SICAP",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33044bd3-84c0-4b2f-a6b0-9f15209af350",
+      "comment": "Abre o SEI",
+      "command": "open",
+      "target": "https://sei.go.gov.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c735fd0a-9cb3-409f-b90f-ca14c9e2d536",
+      "comment": "[Entrando no Processo] - Seleciona a Caixa de Pesquisa",
+      "command": "click",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d21a318a-a0c4-4260-9651-34a500fe6344",
+      "comment": "[Entrando no Processo] - Cola o número do Processo",
+      "command": "type",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${PROCESSO}"
+    }, {
+      "id": "5ee67f76-73b2-4308-8b4a-88aa951efc70",
+      "comment": "[Entrando no Processo] - Dá Enter na Caixa de Pesquisa",
+      "command": "sendKeys",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f763378c-4ab8-4f7f-b508-4cab2112add7",
+      "comment": "[Salvando Descrição do Processo] -  Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0bf8910-e4da-4ff4-a83f-6c610310ca43",
+      "comment": "[Salvando Descrição do Processo] - Clica no Ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(3) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(3) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Consultar/Alterar Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[3]/img", "xpath:idRelative"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5de157f5-d555-4153-8eac-0fe15ac0e57d",
+      "comment": "[Salvando Descrição do Processo] - Salva o Valor",
+      "command": "storeValue",
+      "target": "id=txtDescricao",
+      "targets": [],
+      "value": "DESCRICAO"
+    }, {
+      "id": "5f06ce45-72d1-48a7-b826-5631a5289eea",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a9f62a7-6d53-4927-897c-1e8dfe07b144",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba9a5e2a-51ea-4fd7-bb46-c133b372ecee",
+      "comment": "[Acompanhamento Especial] - Recarrega a página",
+      "command": "executeScript",
+      "target": "window.location.reload()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa105c75-931f-4699-a206-6e344a3e36b6",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "d100253a-59fd-42dc-a458-dadeeb7ee8c9",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "08e41cd6-72a4-4b2a-b47e-fee018af5c5e",
+      "comment": "[Acompanhamento Especial] - Clica no Acompanhamento",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(4) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(4) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Acompanhamento Especial']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[4]/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d4b30b-7a38-45f4-a77a-b3e8c7d9ffc9",
+      "comment": "[Acompanhamento Especial] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaObservacao",
+      "targets": [],
+      "value": "${DESCRICAO}"
+    }, {
+      "id": "6baa69a7-0cb3-47bf-9036-9acf1134fb06",
+      "comment": "[Acompanhamento Especial] - Clica no menu",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d230f8a-adae-48e8-b9e9-cd4ed694e924",
+      "comment": "[Acompanhamento Especial] - Clica na SAAD",
+      "command": "select",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [],
+      "value": "label=${SECAO}"
+    }, {
+      "id": "30cccb12-bd7d-4952-9036-8b975f924b3d",
+      "comment": "[Acompanhamento Especial] - Clica no MENU",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b13567c1-e5b5-4024-81e4-601c561289b2",
+      "comment": "[Acompanhamento Especial] - Salva",
+      "command": "click",
+      "target": "css=.infraButton:nth-child(1) > .infraTeclaAtalho",
+      "targets": [
+        ["css=.infraButton:nth-child(1) > .infraTeclaAtalho", "css:finder"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f0ce309-8d57-4942-8409-5640005a37bb",
+      "comment": "[Atribuir Processo] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(8) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(8) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Atribuir Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[8]/img", "xpath:idRelative"],
+        ["xpath=//a[8]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e2dc734-f3e1-4f1c-a539-8297d95a3282",
+      "comment": "[Atribuir Processo] - Clica no menu",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b424381-e314-4fcd-896c-7507049cdd2d",
+      "comment": "[Atribuir Processo] - Seleciona o Responsável",
+      "command": "select",
+      "target": "id=selAtribuicao",
+      "targets": [],
+      "value": "label=${RESPONSAVEL}"
+    }, {
+      "id": "07579d4b-8641-4a07-8624-42c33e3a1657",
+      "comment": "[Atribuir Processo] - Clica no MENU",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b375d9f9-face-4fd7-910b-93f928155833",
+      "comment": "[Atribuir Processo] - Salva",
+      "command": "click",
+      "target": "id=sbmSalvar",
+      "targets": [
+        ["id=sbmSalvar", "id"],
+        ["name=sbmSalvar", "name"],
+        ["css=#sbmSalvar", "css:finder"],
+        ["xpath=//button[@id='sbmSalvar']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b193ad0-f283-46df-9793-ce875e0171dc",
+      "comment": "[Anotações] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(14) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(14) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Anotações']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[14]/img", "xpath:idRelative"],
+        ["xpath=//a[14]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e18a3429-cb90-47fc-b1ee-8d02d1d79e44",
+      "comment": "[Anotações] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaDescricao",
+      "targets": [
+        ["id=txaDescricao", "id"],
+        ["name=txaDescricao", "name"],
+        ["css=#txaDescricao", "css:finder"],
+        ["xpath=//textarea[@id='txaDescricao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Em andamento]"
+    }, {
+      "id": "45ce4d16-9919-402f-a380-c5270824900a",
+      "comment": "[Anotações] - Clica no Prioridade",
+      "command": "check",
+      "target": "id=chkSinPrioridade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c66ae5ae-6748-4148-86fa-2b3143539166",
+      "comment": "[Anotações] - Clica no Salvar",
+      "command": "click",
+      "target": "name=sbmRegistrarAnotacao",
+      "targets": [
+        ["name=sbmRegistrarAnotacao", "name"],
+        ["css=.infraButton", "css:finder"],
+        ["xpath=//button[@name='sbmRegistrarAnotacao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "342f4343-d942-4f96-9b43-c02504d1a43f",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(18) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(18) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Gerenciar Marcador']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[18]/img", "xpath:idRelative"],
+        ["xpath=//a[18]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c294de1-4410-4b62-b98d-bcee1c1e9d8f",
+      "comment": "[Marcador] - Clica no Menu",
+      "command": "click",
+      "target": "css=.dd-selected",
+      "targets": [
+        ["css=.dd-selected", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/div/a", "xpath:idRelative"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "828954fc-5ced-4857-bd49-df3bddda4336",
+      "comment": "[Marcador] - Clica na SAAD",
+      "command": "click",
+      "target": "linkText=${SECAO}",
+      "targets": [
+        ["linkText=SAAD", "linkText"],
+        ["css=li:nth-child(10) > .dd-option", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SAAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fc74004-8748-44eb-ae69-84995ec3d2b7",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37b7ef7a-b628-4e64-a614-8ec9cdfc06bd",
+      "comment": "[Marcador] - Escreve Notion",
+      "command": "type",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Notion] - "
+    }]
+  }, {
+    "id": "640c75a8-95ac-4190-8e86-e473a06a7e41",
+    "name": "2. SOP",
+    "commands": [{
+      "id": "b83badd6-c64b-4c5e-8643-a48297d01b68",
+      "comment": "",
+      "command": "store",
+      "target": "202100011020814",
+      "targets": [],
+      "value": "PROCESSO"
+    }, {
+      "id": "2568952e-960e-40c4-be84-037bff01f082",
+      "comment": "",
+      "command": "store",
+      "target": "442533110 - THIAGO CORREA FAGUNDES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "358014f9-9046-433e-8dcc-da87ce91d49a",
+      "comment": "",
+      "command": "store",
+      "target": "pcesar - PAULO CESAR ALMEIDA TIMOTEO",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a928598-872f-4160-bd28-9dbcea292220",
+      "comment": "",
+      "command": "store",
+      "target": "906541107 - MAYCOM DE SOUZA TELES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c4a9330-ffee-4810-befc-6b838e796eb5",
+      "comment": "",
+      "command": "store",
+      "target": "1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS",
+      "targets": [],
+      "value": "RESPONSAVEL"
+    }, {
+      "id": "e1ec5772-579b-41b8-b70c-6e0f3520aee7",
+      "comment": "",
+      "command": "store",
+      "target": "68897839134 - WESLEY PEREIRA BARBOSA",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a900e2c-6908-4272-b6ea-10f105eac686",
+      "comment": "",
+      "command": "store",
+      "target": "707373123 - ROGERIO SILVA DE MATOS",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bfa734d-d900-41f2-8b8a-0337ef0438bf",
+      "comment": "",
+      "command": "store",
+      "target": "Almoxarifado / SMT",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25329da8-0728-4c7d-adfa-4c013f9e2808",
+      "comment": "",
+      "command": "store",
+      "target": "Comando/Subcomando",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef90f2e9-e9e0-4b19-8ee5-dc431c21b8eb",
+      "comment": "",
+      "command": "store",
+      "target": "Companhia Operacional",
+      "targets": [],
+      "value": "SECAO"
+    }, {
+      "id": "1ffeedad-058c-4ce8-9535-4b1ec3fc39e5",
+      "comment": "",
+      "command": "store",
+      "target": "COVID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d76179ef-a40d-4863-b069-28466d7a6879",
+      "comment": "",
+      "command": "store",
+      "target": "SAAD",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f519ab3-7b36-4632-be0e-a06180adc0f7",
+      "comment": "",
+      "command": "store",
+      "target": "SICAP",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1d1f8c2-2dda-48ac-a0e4-b6483ec7a3ce",
+      "comment": "Abre o SEI",
+      "command": "open",
+      "target": "https://sei.go.gov.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bda4fdd2-5fca-426f-9b00-904a4ae3aacb",
+      "comment": "[Entrando no Processo] - Seleciona a Caixa de Pesquisa",
+      "command": "click",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d46d04eb-f07c-4c10-a8d9-c80e067883a0",
+      "comment": "[Entrando no Processo] - Cola o número do Processo",
+      "command": "type",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${PROCESSO}"
+    }, {
+      "id": "e3dc7132-2e98-4d30-a118-cd20ca6eba75",
+      "comment": "[Entrando no Processo] - Dá Enter na Caixa de Pesquisa",
+      "command": "sendKeys",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "aa7df82e-2edc-4e1c-8292-166024887488",
+      "comment": "[Salvando Descrição do Processo] -  Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "87452d1d-a905-40b8-9646-687aecae0f3b",
+      "comment": "[Salvando Descrição do Processo] - Clica no Ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(3) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(3) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Consultar/Alterar Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[3]/img", "xpath:idRelative"],
+        ["xpath=//a[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11d7009d-acf4-4602-a2d1-e3c3e59b5909",
+      "comment": "[Salvando Descrição do Processo] - Salva o Valor",
+      "command": "storeValue",
+      "target": "id=txtDescricao",
+      "targets": [],
+      "value": "DESCRICAO"
+    }, {
+      "id": "f126deb1-9d53-4ae6-b538-6e450626b7b9",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "3637b384-04b5-4783-87f9-8bd6530f44cb",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ba47cbd-f52f-4e7e-bd81-da31f4e187e7",
+      "comment": "[Acompanhamento Especial] - Recarrega a página",
+      "command": "executeScript",
+      "target": "window.location.reload()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd85a835-abba-491b-9623-34eb6d81160e",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "59c30ac8-e15f-44a6-921e-fdb86455d489",
+      "comment": "[Acompanhamento Especial] - Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "a901c402-f026-49d9-93db-a57bf80d6b9b",
+      "comment": "[Acompanhamento Especial] - Clica no Acompanhamento",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(4) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(4) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Acompanhamento Especial']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[4]/img", "xpath:idRelative"],
+        ["xpath=//a[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73df8ab1-b5da-4c63-b772-776a25693c1f",
+      "comment": "[Acompanhamento Especial] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaObservacao",
+      "targets": [],
+      "value": "${DESCRICAO}"
+    }, {
+      "id": "da977011-aba0-4d62-a254-6742fb712efa",
+      "comment": "[Acompanhamento Especial] - Clica no menu",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0eef64c5-9d2f-4598-9466-ee06cb010e51",
+      "comment": "[Acompanhamento Especial] - Clica na SAAD",
+      "command": "select",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [],
+      "value": "label=${SECAO}"
+    }, {
+      "id": "0319f1b1-7eed-4cdd-a727-3713497f7a4e",
+      "comment": "[Acompanhamento Especial] - Clica no MENU",
+      "command": "click",
+      "target": "id=selGrupoAcompanhamento",
+      "targets": [
+        ["id=selGrupoAcompanhamento", "id"],
+        ["name=selGrupoAcompanhamento", "name"],
+        ["css=#selGrupoAcompanhamento", "css:finder"],
+        ["xpath=//select[@id='selGrupoAcompanhamento']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nALMOXARIFADO\nCOMANDO/SUBCOMANDO 8° BBM\nCOMPANHIA OPERACIONAL\nCOVID\nSAAD/SICAP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7397a615-7893-468b-a48b-35c101ee7f86",
+      "comment": "[Acompanhamento Especial] - Salva",
+      "command": "click",
+      "target": "css=.infraButton:nth-child(1) > .infraTeclaAtalho",
+      "targets": [
+        ["css=.infraButton:nth-child(1) > .infraTeclaAtalho", "css:finder"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee6206d9-b4b1-4373-a595-7aaa8321b1e6",
+      "comment": "[Atribuir Processo] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(8) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(8) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Atribuir Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[8]/img", "xpath:idRelative"],
+        ["xpath=//a[8]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5a6978c-adb8-4a6d-bc59-1d6c6f1e6948",
+      "comment": "[Atribuir Processo] - Clica no menu",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3051405-d8b1-4dca-8afa-0f5467dd8fea",
+      "comment": "[Atribuir Processo] - Seleciona o Responsável",
+      "command": "select",
+      "target": "id=selAtribuicao",
+      "targets": [],
+      "value": "label=${RESPONSAVEL}"
+    }, {
+      "id": "2f26d680-e072-417c-9ad4-d9a5d347f365",
+      "comment": "[Atribuir Processo] - Clica no MENU",
+      "command": "click",
+      "target": "id=selAtribuicao",
+      "targets": [
+        ["id=selAtribuicao", "id"],
+        ["name=selAtribuicao", "name"],
+        ["css=#selAtribuicao", "css:finder"],
+        ["xpath=//select[@id='selAtribuicao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,' \nbarbosa5 - WEBER PEREIRA BARBOSA\nbrunoresende - BRUNO RESENDE DOS SANTOS\ncleverfidelis - CLEVER FIDELES REIS\njeffersonferreira - JEFFERSON FERREIRA SOUZA\nnilmar - NILMAR FRANCISCO DE LUCCA\npcesar - PAULO CESAR ALMEIDA TIMOTEO\nprodrigues - PAULO CESAR RODRIGUES\nrbatista - RENATO BATISTA PIRES NETO\nsergioalmeida - SERGIO CARVALHO DE ALMEIDA\nvitoraguiar - VITOR HUGO DE PAIVA MARTINS AGUIAR\n4923103 - ENIO EDGAR ALVES SOUSA\n6324142 - RODRIGO PEREIRA DE PAIVA\n168764156 - JOAO PAULO OLIVEIRA FERNANDES\n314638199 - WENDEL DA SILVA MATOS\n442533110 - THIAGO CORREA FAGUNDES\n537130101 - PEDRO HENRIQUE AMORIM FERREIRA\n664099181 - ALEX SILVA RAMOS\n707373123 - ROGERIO SILVA DE MATOS\n712118101 - ANDRE BATISTA DA SILVA\n906541107 - MAYCOM DE SOUZA TELES\n1005653100 - BRUNO ANDRE XAVIER DE LIMA\n1113230100 - DARWIN DE SOUZA IHUARAQUI\n1113959177 - ALEX HENRIQUE TEIXEIRA\n1167104110 - ALESSANDRA RIAD ISKANDAR PLAZA\n1183822170 - FERNANDO HENRIQUE DOS SANTOS CRUZ\n1593549199 - DIOGO MOREIRA FERNANDES\n1931959170 - ANDRE LUIZ LHERMUSIEAU BARROS\n2144958173 - FABRICIO MESSIAS FERREIRA\n2274944156 - REYNIER CLESIO DA SILVA COUTO\n2334524190 - VICTOR SALOMAO VALADARES DO NASCIMENTO\n2461477175 - ALISSON LUSTOSA DA SILVA\n3260350101 - JOHNATA FERREIRA SILVA\n27730840120 - DIVINO SILVA DOS SANTOS\n43506488104 - SINCLAIR BATISTA DE OLIVEIRA\n43582729168 - JOAO FERNANDES SARDEIRO\n49235265134 - ROMILDO CARLOS FERREIRA\n51005182191 - ADALBERTO NEVES DA SILVA\n56558767104 - LUCIANO RODRIGUES PINTO DE MELO\n62474650334 - OSMAR ALVIM DE SOUSA\n64165841153 - JOAO PAULO COELHO\n68897839134 - WESLEY PEREIRA BARBOSA\n69074933149 - KLAUDIO ANTONIO ALVES DE MORAIS\n70330654187 - WANDERSON JACOMINI DA SILVA\n73344893149 - FREDERICO WILTON VIEIRA\n76929450120 - DJIN AUGUSTO CAETANO REBOUCAS\n79182658153 - VALDILSON SOUZA RODRIGUES\n79900798104 - EZIO ANTONIO DE BARROS\n79901212120 - FELIX CAMARGO DA SILVA\n81073038149 - ROGERIO MENDES DOS SANTOS\n81551126168 - IRAN CHIODINI DA SILVA MAGALHAES\n82392846120 - JOSE CORREIA DA CRUZ\n84377550349 - FAGNER ANDRADE PESSOA\n84453486120 - WESLEY COSTA PESSOA\n86060791115 - WEULLER BORGES\n86649272191 - WALTER DA SILVA GOMES\n87719851153 - WESLEY ROBERTO DE BRITO\n89322800100 - MARCIO ROBERTO NOVATO PESSOA JUNIOR\n89893760178 - HIGO PEREIRA\n90739396153 - FABRICIO PINHO ARAUJO\n93852681120 - MARIANA VIEIRA DE SOUSA\n96750618120 - THYAGO FERREIRA BORGES\n96970626172 - FABIO LEMOS DE OLIVEIRA\n97536512104 - WELLINGTON LUIZ GOMES MELO\n97589616168 - HELIO ARRUDA JUNIOR\n98028413153 - LEONARDO CARNEIRO DO CARMO\n98948440144 - RUDNICKI ALMEIDA DE SOUSA\n99193590172 - PLINIO CEZAR DA SILVA TEIXEIRA')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83c74237-a98c-4c6f-94eb-a485b1eca901",
+      "comment": "[Atribuir Processo] - Salva",
+      "command": "click",
+      "target": "id=sbmSalvar",
+      "targets": [
+        ["id=sbmSalvar", "id"],
+        ["name=sbmSalvar", "name"],
+        ["css=#sbmSalvar", "css:finder"],
+        ["xpath=//button[@id='sbmSalvar']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cc66ac9-3d40-4f61-83f8-0ba9cf76366f",
+      "comment": "[Anotações] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(14) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(14) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Anotações']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[14]/img", "xpath:idRelative"],
+        ["xpath=//a[14]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4abc31e-ef17-456b-a1d5-c34c630749a9",
+      "comment": "[Anotações] - Cola a Descrição",
+      "command": "type",
+      "target": "id=txaDescricao",
+      "targets": [
+        ["id=txaDescricao", "id"],
+        ["name=txaDescricao", "name"],
+        ["css=#txaDescricao", "css:finder"],
+        ["xpath=//textarea[@id='txaDescricao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraAreaDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Em andamento]"
+    }, {
+      "id": "fb68abd7-da12-47ef-b63a-4ba33863d9ba",
+      "comment": "[Anotações] - Clica no Prioridade",
+      "command": "check",
+      "target": "id=chkSinPrioridade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e738ca67-41ce-4a32-9898-67b591c0b4c1",
+      "comment": "[Anotações] - Clica no Salvar",
+      "command": "click",
+      "target": "name=sbmRegistrarAnotacao",
+      "targets": [
+        ["name=sbmRegistrarAnotacao", "name"],
+        ["css=.infraButton", "css:finder"],
+        ["xpath=//button[@name='sbmRegistrarAnotacao']", "xpath:attributes"],
+        ["xpath=//div[@id='divInfraBarraComandosSuperior']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c04db6d-ac71-4748-a8e0-b7d19f155b71",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(18) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(18) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Gerenciar Marcador']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[18]/img", "xpath:idRelative"],
+        ["xpath=//a[18]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4f2b0ee-e70c-40e1-ae9d-8b337d97e758",
+      "comment": "[Marcador] - Clica no Menu",
+      "command": "click",
+      "target": "css=.dd-selected",
+      "targets": [
+        ["css=.dd-selected", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/div/a", "xpath:idRelative"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41f14005-0ea7-4a97-8cbb-895068fd9407",
+      "comment": "[Marcador] - Clica na SAAD",
+      "command": "click",
+      "target": "linkText=${SECAO}",
+      "targets": [
+        ["linkText=SAAD", "linkText"],
+        ["css=li:nth-child(10) > .dd-option", "css:finder"],
+        ["xpath=//div[@id='selMarcador']/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SAAD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6110cc2-2d13-492c-8473-8b8d69e9dc20",
+      "comment": "[Marcador] - Clica no ícone",
+      "command": "click",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "045be3f2-9e75-4557-96bb-60745dc661c5",
+      "comment": "[Marcador] - Escreve Notion",
+      "command": "type",
+      "target": "id=txaTexto",
+      "targets": [
+        ["id=txaTexto", "id"],
+        ["name=txaTexto", "name"],
+        ["css=#txaTexto", "css:finder"],
+        ["xpath=//textarea[@id='txaTexto']", "xpath:attributes"],
+        ["xpath=//div[@id='divDados']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "[Notion] - "
+    }]
+  }, {
+    "id": "3f14ede0-ab3f-47c2-b6f6-7fcaa5ff683b",
+    "name": "7. Concluir processo",
+    "commands": [{
+      "id": "44a133fd-9a91-44af-9bfb-91d133b4f71b",
+      "comment": "",
+      "command": "store",
+      "target": "202100011021035",
+      "targets": [],
+      "value": "PROCESSO"
+    }, {
+      "id": "b0ca5964-97d7-4ba0-a2fd-3f73c806b648",
+      "comment": "",
+      "command": "store",
+      "target": "442533110 - THIAGO CORREA FAGUNDES",
+      "targets": [],
+      "value": "RESPONSAVEL"
+    }, {
+      "id": "19537ad6-b7a6-430f-b236-d77c4ada3a5e",
+      "comment": "",
+      "command": "store",
+      "target": "pcesar - PAULO CESAR ALMEIDA TIMOTEO",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba1c4edb-d6ea-48a8-9885-c064e46a80a3",
+      "comment": "",
+      "command": "store",
+      "target": "906541107 - MAYCOM DE SOUZA TELES",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72d94f3d-0a38-486b-b60c-93b967225f53",
+      "comment": "",
+      "command": "store",
+      "target": "68897839134 - WESLEY PEREIRA BARBOSA",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bff27c83-3c30-4159-920c-d54c96dbd7d0",
+      "comment": "",
+      "command": "store",
+      "target": "707373123 - ROGERIO SILVA DE MATOS",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9b2e8bb-d829-4517-9e59-837b3b5c1d97",
+      "comment": "",
+      "command": "store",
+      "target": "Almoxarifado / SMT",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b549e5a0-5645-447c-9270-513acdcffd12",
+      "comment": "",
+      "command": "store",
+      "target": "Comando/Subcomando",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29a8cd50-0033-4d95-891e-191194b6c6dc",
+      "comment": "",
+      "command": "store",
+      "target": "Companhia Operacional",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dacd0de3-67d5-48bb-9d33-dd61143d2ae8",
+      "comment": "",
+      "command": "store",
+      "target": "COVID",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a166875-9b04-4cf2-87b5-b8c960f9d1cf",
+      "comment": "",
+      "command": "store",
+      "target": "SAAD",
+      "targets": [],
+      "value": "SECAO"
+    }, {
+      "id": "c2916b02-d6af-4ba0-bb94-81cebfeaf0fc",
+      "comment": "",
+      "command": "store",
+      "target": "SICAP",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17032056-99b3-4eab-8e6d-d7bc064595bc",
+      "comment": "Abre o SEI",
+      "command": "open",
+      "target": "https://sei.go.gov.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0f32c27-445b-4d64-9ae3-2d9d89369903",
+      "comment": "[Entrando no Processo] - Seleciona a Caixa de Pesquisa",
+      "command": "click",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af11f77c-878e-4c8a-918d-3afe5ea2c8ad",
+      "comment": "[Entrando no Processo] - Cola o número do Processo",
+      "command": "type",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${PROCESSO}"
+    }, {
+      "id": "e3402c0c-c899-4675-8320-1a7209a48db8",
+      "comment": "[Entrando no Processo] - Dá Enter na Caixa de Pesquisa",
+      "command": "sendKeys",
+      "target": "id=txtPesquisaRapida",
+      "targets": [
+        ["id=txtPesquisaRapida", "id"],
+        ["name=txtPesquisaRapida", "name"],
+        ["css=#txtPesquisaRapida", "css:finder"],
+        ["xpath=//input[@id='txtPesquisaRapida']", "xpath:attributes"],
+        ["xpath=//form[@id='frmProtocoloPesquisaRapida']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8e6d13cc-ae75-46cf-a82c-e9bb525a29c4",
+      "comment": "[Salvando Descrição do Processo] -  Seleciona o Frame",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "1df031ab-7186-44ca-8709-ae8ef280efca",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector('img[title=\"Concluir Processo\"]')",
+      "targets": [],
+      "value": "statusOK"
+    }, {
+      "id": "9665180d-d2f3-45be-83c7-4a06797d1eae",
+      "comment": "",
+      "command": "if",
+      "target": "${statusOK}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "022786a6-eeba-4fb2-b335-28f3f3d100f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botaoSEI:nth-child(17) > .infraCorBarraSistema",
+      "targets": [
+        ["css=.botaoSEI:nth-child(17) > .infraCorBarraSistema", "css:finder"],
+        ["xpath=//img[@alt='Concluir Processo']", "xpath:img"],
+        ["xpath=//div[@id='divArvoreAcoes']/a[17]/img", "xpath:idRelative"],
+        ["xpath=//a[17]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce02b9d7-bf76-4961-84be-180358fa236d",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3402fad3-0dce-4f00-b764-ecb4bb243215",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["68687149-b091-4617-adab-7c2ed085569f"]
+  }],
+  "urls": ["https://sei.go.gov.br/"],
+  "plugins": []
+}
